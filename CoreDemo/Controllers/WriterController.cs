@@ -5,7 +5,7 @@ namespace CoreDemo.Controllers
 {
     public class WriterController : Controller
     {
-        [AllowAnonymous]
+        
         public IActionResult Index()
         {
             return View();
@@ -13,6 +13,25 @@ namespace CoreDemo.Controllers
         public IActionResult WriterProfile()
         {
             return View();
+        }
+        public IActionResult WriterMail()
+        {
+            return View();
+        }
+        [AllowAnonymous]
+        public IActionResult Test()
+        {
+            return View();
+        }
+        [AllowAnonymous]
+        public PartialViewResult WriterNavBarPartial()
+        {
+            return PartialView();
+        }
+        [AllowAnonymous]
+        public PartialViewResult WriterFooterPartial()
+        {
+            return PartialView();
         }
     }
 }
