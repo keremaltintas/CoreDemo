@@ -21,7 +21,7 @@
 			<div class="row">
 				<!--left-->
 				<div class="col-lg-8 left-blog-info-w3layouts-agileits text-left">
-					@foreach(var İtem in Model)
+					@foreach(var item in Model)
 					{
 					<div class="blog-grid-top">
 						<div class="b-grid-top">
@@ -35,7 +35,7 @@
 									<li>
 										<a href="#">
 											<i class="far fa-calendar-alt"></i> @(((DateTime)
-											İtem.BlogCreateDate).ToString("dd-MMM-yyyy"))
+											item.BlogCreateDate).ToString("dd-MMM-yyyy"))
 											</a>
 									</li>
 									<li class="mx-2">
@@ -54,9 +54,9 @@
 						</div>
 
 						<h3>
-							<a href="single.html">@İtem.BlogTitle </a>
+							<a href="single.html">@item.BlogTitle </a>
 						</h3>
-						<p>@İtem.BlogContent</p>
+						<p>@item.BlogContent</p>
 						<a href="/Blog/Index" class="btn btn-primary read-m"> Blog Listesi </a>
 					</div>
 					}
