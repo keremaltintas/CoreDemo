@@ -7,13 +7,8 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Abstract
 {
-    public interface IGenericService<T>
+    public interface IMessage2Service : IGenericService<Message2>
     {
-        void TAdd(T t);
-        void TDelete(T t);
-        void TUpdate(T t);
-        List<T> GetList();
-        T TGetById(int id);
-       
+        List<Message2> GetInboxListByWriter(int id);
     }
 }
